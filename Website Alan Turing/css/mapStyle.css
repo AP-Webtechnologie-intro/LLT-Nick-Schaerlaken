@@ -1,0 +1,9 @@
+#mijnmap {
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd; 
+            border-radius: 8px; 
+            overflow: hidden; 
+}

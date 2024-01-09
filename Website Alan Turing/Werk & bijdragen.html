@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     <!-- meta -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,56 +11,68 @@
     <link rel="stylesheet" href="./css/style.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-   
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha384-e4700wWiP1C+7UAq7bUq6w5g/lMJ5eBdq0FrCK1axhxJi9rDlJhuWZbpUWlgJwEEx" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
-<body class="p-3 m-0 border-0 bd-example">
-<nav class="navbar navbar-expand-md navbar-light" style="background-color: #ffffff">
-  <div class="container-fluid">
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./biografie.html">Biografie</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link active" href="./Werk & bijdragen.html">Werk & bijdragen</a>
-        </li>
-
-        <li class="nav-item">
+<body class="bg-light">
+   <!-- Navigatiebalk -->
+   <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./biografie.html">Biografie</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Overzicht
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="./Vroege Jaren.html">Vroege jaren</a>
+              <a class="dropdown-item" href="./Bijdrage wiskunde.html">Bijdrage wiskunde</a>
+              <a class="dropdown-item" href="./2de Wereldoorlog.html">2de wereldoorlog</a>
+              <a class="dropdown-item" href="./invloed op AI.html">AI</a>
+              <a class="dropdown-item" href="./persecutie en onrecht.html">Persecutie en onrecht</a>
+              <a class="dropdown-item" href="./invloed informatica.html">Invloed informatica</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="./Werk & bijdragen.html">Werk & bijdragen</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="./bronvermeldingen.html">Bronvermeldingen</a>
           </li>
-
-        <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link" href="./contact.html">Contact</a>
           </li>
-      </ul>
-            <!-- Zoekbalk -->
-            <form class="form-inline my-2 my-lg-0 ml-auto">
-              <input class="form-control mr-sm-2" type="search" placeholder="Zoeken" aria-label="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Zoeken</button>
-          </form>
+        </ul>
+        <!-- Zoekbalk -->
+        <form class="form-inline my-2 my-lg-0 ml-auto">
+          <input class="form-control mr-sm-2" type="search" placeholder="Zoeken" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Zoeken</button>
+        </form>
+      </div>
     </div>
-  </div>
-</nav>
-
-<div class="container mt-5">
-    <h1 class="text-center mb-4">Alan Turing's Werken</h1>
-  
+  </nav>
+    
+  <div class="container mt-5">
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Werk & bijdragen</h1>
+    </div>
+      
     <div id="timelineCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
-        <!-- Voeg hier de tijdlijnitems toe -->
+      
         <div class="carousel-item">
           <img src="./images/Enigma.jpeg" class="d-block w-100 custom-carousel-img" alt="1939-1940">
           <div class="carousel-caption d-none d-md-block">
@@ -79,14 +90,15 @@
         </div>
 
         <div class="carousel-item active">
-            <img src="./images/turing machine.jpg" class="d-block w-100 custom-carousel-img" alt="1945-1950">
-            <div class="carousel-caption d-none d-md-block">
-              <h4>1930</h4>
-                <h3>Turing Machine</h3>
-            </div>
-        <!-- Voeg meer tijdlijnitems toe zoals hierboven -->
+          <img src="./images/turing machine.jpg" class="d-block w-100 custom-carousel-img" alt="1930">
+          <div class="carousel-caption d-none d-md-block">
+            <h4>1930</h4>
+            <h3>Turing Machine</h3>
+          </div>
+        </div>
+        
       </div>
-  
+
       <!-- Navigatieknoppen -->
       <a class="carousel-control-prev" href="#timelineCarousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -97,46 +109,45 @@
         <span class="sr-only">Volgende</span>
       </a>
     </div>
-  </div>
-
-  <!-- artikels over de werken -->
-  <div class="container-artikels">
-    <div class="row">
-      <main class="col-md-9">
-        <section id="shopintro" class="row">
-          <hr>
-  
-          <article class="item">
-            <h2 class="text-uppercase fs-6 fw-bolder pt-3">Turing Machine</h2>
-            <p>
-                De Turingmachine is geen fysieke machine, maar eerder een abstract wiskundig model van een computer. Het idee achter de Turingmachine is om een eenvoudig apparaat te definiëren dat in staat is tot universele berekening. Turing gebruikte dit concept om de fundamentele vraag van de beslissingsproblematiek (Entscheidungsproblem) aan te pakken, die betrekking had op het bepalen of een bepaalde wiskundige bewering waar is of niet.
-                Het ontwerp van de Turingmachine bestaat uit een leeskop die over een oneindige strook beweegt, verdeeld in cellen. Elke cel kan een symbool bevatten, en de machine kan het symbool op de huidige cel lezen, schrijven of wissen. Het heeft ook een interne toestand die kan worden gewijzigd op basis van de huidige toestand en het gelezen symbool. De instructies voor de machine zijn beschreven in een overgangstabel.</p>
+ 
+    
+    <div class="container-artikels mt-5">
+      <div class="row">
+        <main class="col-md-9">
+          <section id="shopintro" class="row">
+            <hr>
+    
+            <article class="col-md-12 item">
+              <h2 class="text-uppercase fs-6 fw-bolder pt-3">Turing Machine</h2>
+              <p>
+                De Turingmachine is geen fysieke machine, maar eerder een abstract wiskundig model van een computer. Het idee achter de Turingmachine is om een eenvoudig apparaat te definiëren dat in staat is tot universele berekening. Turing gebruikte dit concept om de fundamentele vraag van de beslissingsproblematiek (Entscheidungsproblem) aan te pakken, die betrekking had op het bepalen of een bepaalde wiskundige bewering waar is of niet. Het ontwerp van de Turingmachine bestaat uit een le
+              </p>
+              
             </article>
-
-          <article class="item">
-            <h2 class="text-uppercase fs-6 fw-bolder pt-3">The Bombe</h2>
-            <p>
-                De Enigma-machine was een geavanceerd apparaat dat door de Duitsers werd gebruikt voor het versleutelen van militaire berichten. Het breken van de Enigma-code had hoge prioriteit voor de Geallieerden.
-                De Bombe werd ontworpen en gebouwd om het proces van het ontcijferen van Enigma-gecodeerde berichten te automatiseren en te versnellen.
-                e Bombe was een elektromechanisch apparaat ontworpen door Alan Turing, Gordon Welchman en anderen. Het was een evolutie van eerdere Poolse en Britse inspanningen om Enigma te breken.
-                Het ontwerp van de machine was gebaseerd op wiskundige inzichten en deducties gedaan door Turing en anderen. Het maakte gebruik van zwakke punten in de instellingen en procedures van de Enigma-machine.</p>
-          </article>
-
-          <article class="item">
-            <h2 class="text-uppercase fs-6 fw-bolder pt-3">ACE</h2>
-            <p>
-                De ACE was bedoeld als een universele Turing-machine, wat betekent dat het in staat zou zijn om elke berekening uit te voeren die mogelijk is volgens de regels van de formele logica. Het was een algemene programmeerbare computer.
-                Het ontwerp van de ACE omvatte elektronische componenten, wat het tot een van de vroegste voorstellen voor een elektronische computer maakte. Turing stelde voor om elektronenbuizen te gebruiken voor het uitvoeren van berekeningen.</p>
-        </section>
-        <hr>
-
+    
+            <article class="col-md-12 item">
+              <h2 class="text-uppercase fs-6 fw-bolder pt-3">The Bombe</h2>
+              <p>
+                De Enigma-machine was een geavanceerd apparaat dat door de Duitsers werd gebruikt voor het versleutelen van militaire berichten. Het breken van de Enigma-code had hoge prioriteit voor de Geallieerden. De Bombe werd ontworpen en gebouwd om het proces van het ontcijferen van Enigma-gecodeerde berichten te automatiseren en te versnellen. De Bombe was een elektromechanisch apparaat ontworpen door Alan Turing, Gordon Welchman en anderen. Het was een evolutie van eerdere Poolse en Britse inspanningen om Enigma te breken. Het ontwerp van de machine was gebaseerd op wiskundige inzichten en deducties gedaan door Turing en anderen. Het maakte gebruik van zwakke punten in de instellingen en procedures van de Enigma-machine.
+              </p>
+            </article>
+    
+            <article class="col-md-12 item">
+              <h2 class="text-uppercase fs-6 fw-bolder pt-3">ACE</h2>
+              <p>
+                De ACE was bedoeld als een universele Turing-machine, wat betekent dat het in staat zou zijn om elke berekening uit te voeren die mogelijk is volgens de regels van de formele logica. Het was een algemene programmeerbare computer. Het ontwerp van de ACE omvatte elektronische componenten, wat het tot een van de vroegste voorstellen voor een elektronische computer maakte. Turing stelde voor om elektronenbuizen te gebruiken voor het uitvoeren van berekeningen.
+              </p>
+            </article>
+          </section>
+          <hr>
+        </main>
+      </div>
     </div>
-  </div>
   
 </body>
 
 <footer class="footer">
-    <p>Published by Nick Schaerlaken</p>
-  </footer>
+  <p>Published by Nick Schaerlaken</p>
+</footer>
 
 </html>

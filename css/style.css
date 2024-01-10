@@ -80,6 +80,15 @@
 .intro {
   text-align: left;
   padding: 50px 20px; 
-  background-color: rgb(72, 163, 163)
+  background-color: #75B3E0
 }
 
+.container .jumbotron {
+  background-color: #75B3E0
+}
+
+.bordered-container {
+  border: 2px solid #75e0c7; 
+  padding: 15px; 
+  border-radius: 8px; 
+}

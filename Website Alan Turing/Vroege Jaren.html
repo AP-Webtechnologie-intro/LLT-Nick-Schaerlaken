@@ -19,6 +19,17 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!--Script van de wikipedia API-->
     <script src="./js/wiki.js"></script>
+     <!-- LEAFLET -->
+      <!-- leaflet css -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+     <!-- mapstyle css -->
+    <link rel="stylesheet" href="./css/mapStyle.css">
+     <!-- leaflet js -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+     <!-- collegeMap.js -->
+    <script src="./js/collegeMap.js" defer></script>
     
 </head>
 <body class="bg-light">
@@ -82,14 +93,43 @@
       <li>Fascinatie voor wiskunde en wetenschap.</li>
     </ul>
 
+        <!-- Semantische tabel -->
+        <div class="mt-5">
+          <h2>Persoonlijke Informatie</h2>
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row">Geboortedatum</th>
+                <td>23 juni 1912</td>
+              </tr>
+              <tr>
+                <th scope="row">Geboorteplaats</th>
+                <td>Maida Vale, Londen</td>
+              </tr>
+              <tr>
+                <th scope="row">Interesses</th>
+                <td>Wiskunde, Wetenschap</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
     <!-- Afbeelding met bijschrift -->
     <figure class="mt-4">
-      <img src="./images/portret2.jpg" class="img-fluid" alt="Alan Turing in zijn vroege jaren" >
+      <img src="./images/portret2.jpg" class="img-fluid d-block mx-auto" alt="Alan Turing in zijn vroege jaren" height="1000px" width="1200px" >
       <figcaption class="text-center">Alan Turing in zijn vroege jaren</figcaption>
     </figure>
   </div>
 
-
+    <!-- Kaart King's College -->
+  <div class="container">
+    <div class="row">
+      <main class="col-md-12 text-center mt-5">
+        <p>Hieronder op de kaart staat de locatie van het Alan Turing Memorial in Manchester.</p>
+        <section id="map"  class="row">
+          <div id="map" class="col-12 mb-3"></div>
+      </section>
 
 
   

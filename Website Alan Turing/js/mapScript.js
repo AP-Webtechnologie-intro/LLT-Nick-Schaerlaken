@@ -14,3 +14,4 @@ L.rectangle(bounds, {color: "#e60005", weight: 1}).addTo(map);
 
 let apMarker = L.marker([53.46816212874386, -2.2314187536141925]).addTo(map);
 apMarker.bindPopup("<b>Alan Turing Building").openPopup();
+
